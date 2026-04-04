@@ -1,0 +1,90 @@
+/* Global Styling (Parts 3 & 4) */
+* {
+  padding: 5px;
+  margin: 5px;
+  background: #0b0b0c;
+  color: #f5f5f7;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  line-height: 1.5;
+  font-style: normal;
+}
+
+/* Logo Styling (Part 5) */
+#logo {
+  width: 18%;
+  display: block;
+}
+
+/* Navigation Styling (Part 6) */
+nav a {
+  text-decoration: none;
+  color: #f5f5f7;
+  font-weight: 400;
+  padding: 8px 10px;
+  border: 1px solid transparent;
+  border-radius: 12px;
+}
+
+nav a:hover {
+  border-color: #4d5c3b;
+}
+
+#navselected {
+  color: #92ad70;
+}
+
+/* Buy Ticket CTA Button (Part 7) */
+.cta {
+  background-color: #92ad70;
+  color: #0b0b0c;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 12px;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.cta:hover {
+  background-color: #7a9460;
+  color: #0b0b0c;
+}
+
+/* Footer Styling (Part 8) */
+footer {
+  border-top: 1px solid rgba(245, 245, 247, .12);
+  padding: 18px 16px;
+  text-align: center;
+  color: rgba(245, 245, 247, .72);
+}
+
+/* Table Styling (Part 9) */
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #4d5c3b;
+  color: #f5f5f7;
+  width: fit-content;
+}
+
+tr:nth-child(even) {
+  background-color: #1a1a1d;
+}
+
+td, th {
+  padding: 10px 15px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* Form Styling (Part 10) */
+form * {
+  margin: auto;
+  text-align: center;
+}
