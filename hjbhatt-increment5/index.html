@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Heth Bhatt">
+    <meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems">
+    <meta name="description" content="MonoMuse website redesign project">
+    <title>MonoMuse</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./static/style.css">
+    <!-- jQuery 4.0.0 — https://jquery.com/ -->
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+    <script src="./static/script.js" defer></script>
+</head>
+
+<body onload="addYear()">
+
+<div class="container">
+    <header class="header">
+        <img id="logo" src="./static/monomuselogo.png" alt="MonoMuse Museum Logo">
+    </header>
+
+    <nav class="nav_bar">
+        <a href="index.html">Home</a>
+        <a href="views/explore.html">Explore</a>
+        <a href="views/exhibitions.html">Exhibitions</a>
+        <a href="views/buytickets.html">Buy Tickets</a>
+        <a href="views/membership.html">Membership</a>
+        <a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
+    </nav>
+
+    <main class="main">
+        <h2 id="greeting">Welcome to MonoMuse</h2>
+
+        <p id="shortIntro">
+            MonoMuse is a contemporary museum dedicated to exploring the intersection of art,
+            technology, and human creativity. Through immersive exhibitions, interactive
+            installations, and rotating collections, MonoMuse invites visitors to discover
+            how digital innovation is transforming the way we create, experience, and understand art.
+        </p>
+
+        <p id="longIntro">
+            Whether you are a first-time visitor or a returning member, our exhibitions offer
+            new perspectives on the role of technology in culture and everyday life. Plan your
+            visit to experience cutting-edge exhibitions, hands-on experiences, and events
+            designed to inspire curiosity and creativity. MonoMuse also hosts workshops, artist
+            talks, and community events throughout the year. Our galleries feature rotating
+            collections from international artists working at the forefront of digital media,
+            generative art, and immersive design. Join us and explore a world where art meets
+            innovation.
+        </p>
+
+        <span id="readMore">Read More</span>
+        <span id="readLess">Read Less</span>
+
+        <br><br>
+        <a class="cta" href="views/buytickets.html">Buy Tickets</a>
+
+        <h2>Plan Your Visit</h2>
+        <div class="visit-info">
+            <div class="info-card">
+                <h3>Hours</h3>
+                <p>Monday — Friday: 10:00 AM – 6:00 PM</p>
+                <p>Saturday: 10:00 AM – 8:00 PM</p>
+                <p>Sunday: 11:00 AM – 5:00 PM</p>
+                <p>Closed on major holidays</p>
+            </div>
+            <div class="info-card">
+                <h3>Admission</h3>
+                <p>General: $18</p>
+                <p>Students: $18</p>
+                <p>Members: Free</p>
+                <p><a href="views/buytickets.html">Buy tickets online</a></p>
+            </div>
+            <div class="info-card">
+                <h3>Location</h3>
+                <p>4400 Forbes Avenue</p>
+                <p>Pittsburgh, PA 15213</p>
+                <p>Phone: (412) 555-0192</p>
+                <p>Email: info@monomuse.org</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p id="copyYear"></p>
+    </footer>
+</div>
+
+</body>
+</html>

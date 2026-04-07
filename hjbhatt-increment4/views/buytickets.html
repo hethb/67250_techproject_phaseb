@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Heth Bhatt">
+    <meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems">
+    <meta name="description" content="MonoMuse website redesign project">
+    <title>MonoMuse - Buy Tickets</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="../static/script.js" defer></script>
+</head>
+
+<body onload="addYear()">
+
+<div class="container">
+    <header class="header">
+        <img id="logo" src="../static/monomuselogo.png" alt="MonoMuse Museum Logo">
+    </header>
+
+    <nav class="nav_bar">
+        <a href="../index.html">Home</a>
+        <a href="explore.html">Explore</a>
+        <a href="exhibitions.html">Exhibitions</a>
+        <a href="buytickets.html">Buy Tickets</a>
+        <a href="checkout.html">Checkout</a>
+    </nav>
+
+    <main class="main">
+        <h1>Buy Tickets</h1>
+
+        <h2>Ticket Pricing</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Ticket Type</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>General</td>
+                    <td>Standard admission for adults. Includes access to all exhibitions.</td>
+                    <td>$25.00</td>
+                </tr>
+                <tr>
+                    <td>Student</td>
+                    <td>Discounted admission with a valid student ID.</td>
+                    <td>$15.00</td>
+                </tr>
+                <tr>
+                    <td>Member</td>
+                    <td>Complimentary admission for MonoMuse members.</td>
+                    <td>Free</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Monthly Schedule — April 2026</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Exhibition</th>
+                    <th>General</th>
+                    <th>Student</th>
+                    <th>Member</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>April 5, 2026</td>
+                    <td>Reflections in Code</td>
+                    <td>$25.00</td>
+                    <td>$15.00</td>
+                    <td>Free</td>
+                    <td><button class="buy-now-btn" onclick="showPurchaseForm()">Buy Now</button></td>
+                </tr>
+                <tr>
+                    <td>April 12, 2026</td>
+                    <td>The Analog Revival</td>
+                    <td>$25.00</td>
+                    <td>$15.00</td>
+                    <td>Free</td>
+                    <td><button class="buy-now-btn" onclick="showPurchaseForm()">Buy Now</button></td>
+                </tr>
+                <tr>
+                    <td>April 19, 2026</td>
+                    <td>Echoes of Tomorrow</td>
+                    <td>$25.00</td>
+                    <td>$15.00</td>
+                    <td>Free</td>
+                    <td><button class="buy-now-btn" onclick="showPurchaseForm()">Buy Now</button></td>
+                </tr>
+                <tr>
+                    <td>April 26, 2026</td>
+                    <td>Digital Horizons</td>
+                    <td>$25.00</td>
+                    <td>$15.00</td>
+                    <td>Free</td>
+                    <td><button class="buy-now-btn" onclick="showPurchaseForm()">Buy Now</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div id="purchaseForm">
+            <h2>Complete Your Purchase</h2>
+            <form>
+                <label for="buyName">Name:</label><br>
+                <input type="text" id="buyName" name="buyName" required><br><br>
+
+                <label for="buyEmail">Email:</label><br>
+                <input type="email" id="buyEmail" name="buyEmail" required><br><br>
+
+                <label for="buyQuantity">Number of Tickets:</label><br>
+                <input type="number" id="buyQuantity" name="buyQuantity" min="1" required><br><br>
+
+                <label for="buyDate">Select Date:</label><br>
+                <select id="buyDate" name="buyDate" required>
+                    <option value="">-- Choose a date --</option>
+                    <option value="2026-04-05">April 5, 2026 — Reflections in Code</option>
+                    <option value="2026-04-12">April 12, 2026 — The Analog Revival</option>
+                    <option value="2026-04-19">April 19, 2026 — Echoes of Tomorrow</option>
+                    <option value="2026-04-26">April 26, 2026 — Digital Horizons</option>
+                </select><br><br>
+
+                <button type="button" onclick="submitTickets()">Submit</button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p id="copyYear"></p>
+    </footer>
+</div>
+
+</body>
+</html>
