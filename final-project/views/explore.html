@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Heth Bhatt">
+    <meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems">
+    <meta name="description" content="MonoMuse website redesign project">
+    <title>MonoMuse - Explore</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Leaflet CSS — https://leafletjs.com/ -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <link rel="stylesheet" href="../static/style.css">
+    <!-- Leaflet JS — https://leafletjs.com/ -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="../static/script.js" defer></script>
+</head>
+
+<body onload="addYear()">
+
+<div class="container">
+    <header class="header">
+        <img id="logo" src="../static/monomuselogo.png" alt="MonoMuse Museum Logo">
+    </header>
+
+    <nav class="nav_bar">
+        <a href="../index.html">Home</a>
+        <a href="explore.html">Explore</a>
+        <a href="exhibitions.html">Exhibitions</a>
+        <a href="buytickets.html">Buy Tickets</a>
+        <a href="membership.html">Membership</a>
+        <a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
+    </nav>
+
+    <main class="main">
+        <h1>Explore MonoMuse</h1>
+
+        <h2>Our Mission</h2>
+        <p>
+            MonoMuse is committed to making art and technology accessible to everyone.
+            Our mission is to inspire curiosity and creativity by showcasing the
+            transformative power of digital innovation in the world of art and culture.
+            We believe that the intersection of art and technology holds the key to
+            understanding our rapidly evolving world.
+        </p>
+
+        <h2>Who We Serve</h2>
+        <p>MonoMuse welcomes visitors of all ages and backgrounds. We serve:</p>
+        <ul>
+            <li>Art enthusiasts and collectors seeking contemporary digital works</li>
+            <li>Students and educators exploring the relationship between art and technology</li>
+            <li>Families looking for interactive and immersive cultural experiences</li>
+            <li>Researchers and professionals in creative technology fields</li>
+            <li>Community members interested in free public programming and events</li>
+        </ul>
+
+        <h2>Founded</h2>
+        <p>
+            MonoMuse was founded in 2015 in Pittsburgh, Pennsylvania, with a vision to
+            bridge the gap between traditional art institutions and the digital age.
+            What began as a small gallery space has grown into one of the region's most
+            innovative cultural destinations.
+        </p>
+
+        <h2>Milestones</h2>
+        <ul>
+            <li>2015 — MonoMuse opens its doors with its inaugural exhibition, "Digital Horizons"</li>
+            <li>2017 — Welcomed its 100,000th visitor and expanded gallery space by 40%</li>
+            <li>2019 — Launched the annual "Art &amp; Code" festival in partnership with Carnegie Mellon University</li>
+            <li>2021 — Introduced virtual tours and online exhibitions during the global pandemic</li>
+            <li>2023 — Opened the Interactive Innovation Lab for hands-on visitor experiences</li>
+            <li>2025 — Celebrated 10 years with a record-breaking attendance of over 500,000 annual visitors</li>
+        </ul>
+
+        <h2>Contact Us</h2>
+        <p>Address: 4400 Forbes Avenue, Pittsburgh, PA 15213</p>
+        <p>Phone: (412) 555-0192</p>
+        <p>Email: <a href="mailto:info@monomuse.org">info@monomuse.org</a></p>
+
+        <h2>Find Us</h2>
+        <p>Visit MonoMuse in the heart of Pittsburgh's Oakland neighborhood.</p>
+        <div id="map"></div>
+    </main>
+
+    <figure class="main_img">
+        <img src="../static/museum.jpg" alt="The exterior of MonoMuse, a modern museum building with glass facades and geometric architecture" width="600" height="400">
+    </figure>
+
+    <footer class="footer">
+        <p id="copyYear"></p>
+    </footer>
+</div>
+
+</body>
+</html>

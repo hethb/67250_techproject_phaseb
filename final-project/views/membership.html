@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Heth Bhatt">
+    <meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems">
+    <meta name="description" content="MonoMuse website redesign project">
+    <title>MonoMuse - Membership &amp; Donations</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="../static/script.js" defer></script>
+</head>
+
+<body onload="addYear()">
+
+<div class="container">
+    <header class="header">
+        <img id="logo" src="../static/monomuselogo.png" alt="MonoMuse Museum Logo">
+    </header>
+
+    <nav class="nav_bar">
+        <a href="../index.html">Home</a>
+        <a href="explore.html">Explore</a>
+        <a href="exhibitions.html">Exhibitions</a>
+        <a href="buytickets.html">Buy Tickets</a>
+        <a href="membership.html">Membership</a>
+        <a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
+    </nav>
+
+    <main class="main">
+        <h1>Membership &amp; Donations</h1>
+
+        <p>
+            Become a MonoMuse member and enjoy unlimited access, exclusive previews, and
+            special event invitations. Your membership directly supports our exhibitions,
+            educational programs, and community outreach.
+        </p>
+
+        <h2>Membership Tiers</h2>
+        <div class="membership-tiers">
+            <div class="tier-card">
+                <h3>Individual</h3>
+                <p class="price">$75/year</p>
+                <p>Unlimited general admission</p>
+                <p>10% museum shop discount</p>
+                <p>Monthly newsletter</p>
+            </div>
+            <div class="tier-card">
+                <h3>Dual</h3>
+                <p class="price">$120/year</p>
+                <p>Admission for two</p>
+                <p>15% museum shop discount</p>
+                <p>Invitations to member previews</p>
+            </div>
+            <div class="tier-card">
+                <h3>Family</h3>
+                <p class="price">$175/year</p>
+                <p>Admission for two adults + children</p>
+                <p>20% museum shop discount</p>
+                <p>Free kids workshop access</p>
+            </div>
+            <div class="tier-card">
+                <h3>Patron</h3>
+                <p class="price">$500/year</p>
+                <p>All Family benefits</p>
+                <p>VIP exhibition openings</p>
+                <p>Private curator tours</p>
+                <p>Recognition on donor wall</p>
+            </div>
+        </div>
+
+        <h2>Make a Donation</h2>
+        <p>
+            Every contribution helps MonoMuse bring innovative art and technology
+            experiences to our community. Donations support free school field trips,
+            artist residencies, and the preservation of our growing digital art collection.
+        </p>
+        <p>
+            To donate, please contact us at <a href="mailto:giving@monomuse.org">giving@monomuse.org</a>
+            or call (412) 555-0192. All donations are tax-deductible.
+        </p>
+
+        <br>
+        <a class="cta" href="buytickets.html">Buy Tickets</a>
+    </main>
+
+    <footer class="footer">
+        <p id="copyYear"></p>
+    </footer>
+</div>
+
+</body>
+</html>

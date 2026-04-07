@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Heth Bhatt">
+    <meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems">
+    <meta name="description" content="MonoMuse website redesign project">
+    <title>MonoMuse - Order Confirmation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="../static/script.js" defer></script>
+</head>
+
+<body onload="addYear(); loadConfirmation();">
+
+<div class="container">
+    <header class="header">
+        <img id="logo" src="../static/monomuselogo.png" alt="MonoMuse Museum Logo">
+    </header>
+
+    <nav class="nav_bar">
+        <a href="../index.html">Home</a>
+        <a href="explore.html">Explore</a>
+        <a href="exhibitions.html">Exhibitions</a>
+        <a href="buytickets.html">Buy Tickets</a>
+        <a href="membership.html">Membership</a>
+        <a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
+    </nav>
+
+    <main class="main">
+        <h1>Order Confirmed!</h1>
+
+        <p>Thank you for your purchase. Your tickets have been reserved.</p>
+
+        <div class="confirmation-box">
+            <h2>Order Summary</h2>
+            <p>Ticket Type: <strong id="confirmType">—</strong></p>
+            <p>Quantity: <strong id="confirmQuantity">—</strong></p>
+            <p>Visit Date: <strong id="confirmDate">—</strong></p>
+            <p>Email: <strong id="confirmEmail">—</strong></p>
+            <p class="total-line">Total: <span id="confirmTotal">—</span></p>
+        </div>
+
+        <p>A confirmation email will be sent to the address provided. Please present your confirmation at the museum entrance.</p>
+
+        <br>
+        <a class="cta" href="../index.html">Return to Home</a>
+    </main>
+
+    <footer class="footer">
+        <p id="copyYear"></p>
+    </footer>
+</div>
+
+</body>
+</html>
